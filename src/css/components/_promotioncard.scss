@@ -1,0 +1,354 @@
+.pf-finder-v2__box-content-card {
+  min-height: 22.91666667vw;
+
+  @media only screen and (min-width: 1440px) {
+    min-height: unset;
+  }
+
+  .promotion-card-v2,
+  .promotion-card-v2.desktop-card-type--large {
+    @media screen and (max-width: 500px) {
+      height: 165vw;
+    }
+  }
+
+  .desktop-card-type--large {
+    min-height: 59.4vw;
+
+    @media only screen and (min-width: 1440px) {
+      min-height: unset;
+    }
+
+    .promotion-card-v2__wrapper {
+      &.tradeIn {
+        // background-image: url('https://images.samsung.com/is/image/samsung/p5/uk/upper-funnel-pfp/gradient_bg.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #eaeff6;
+
+        .promotion-card-v2__image {
+          top: 36%;
+          z-index: 999;
+        }
+
+        .product-image {
+          @media only screen and (max-width: 480px) {
+            margin-top: 90px;
+          }
+
+          img {
+            width: 50.125vw;
+            @media only screen and (max-width: 768px) {
+              width: 40vw;
+            }
+            @media only screen and (max-width: 500px) {
+              width: 100%;
+            }
+            @media only screen and (max-width: 661px) {
+              width: 100%;
+            }
+            @media only screen and (min-width: 1800px) {
+              width: 36.125vw;
+            }
+            @media only screen and (min-width: 2200px) {
+              width: 20.125vw;
+            }
+          }
+        }
+
+        .promotion-card-v2__text-container {
+          padding-top: 10%;
+
+          @media only screen and (max-width: 480px) {
+            .promotion-card-v2__description-text {
+              min-height: unset;
+            }
+          }
+
+          .price {
+            font-weight: 600;
+            font-size: 25px;
+            color: #000;
+
+            @media only screen and (min-width: 769px) and (max-width: 1024px) {
+              font-size: 20px;
+            }
+
+            @media only screen and (max-width: 768px) {
+              font-size: 18px;
+            }
+          }
+
+          .promotion-card-v2__sub-headline-text {
+            @media only screen and (max-width: 768px) {
+              font-size: 30px;
+            }
+          }
+
+          .promotion-card-v2__sub-headline {
+            color: #000;
+            min-height: 4vw !important;
+          }
+
+          .promotion-card-v2__cta-wrapper {
+            @media only screen and (max-width: 480px) {
+              margin-top: 20px;
+            }
+
+            @media only screen and (min-width: 481px) and (max-width: 768px) {
+              margin-top: 10px;
+            }
+          }
+        }
+      }
+
+      &.upgrade {
+        // background-image: url('https://images.samsung.com/is/image/samsung/p5/uk/upper-funnel-pfp/gradient_bg.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #eaeff6;
+
+        .promotion-card-v2__image {
+          top: 48%;
+          z-index: 999;
+        }
+
+        .product-image {
+          @media only screen and (max-width: 480px) {
+            margin-top: 0px;
+          }
+
+          img {
+            width: 38.125vw;
+            @media only screen and (max-width: 768px) {
+              width: 85.13vw;
+            }
+            @media only screen and (max-width: 767px) {
+              width: 85.13vw;
+            }
+            @media only screen and (max-width: 500px) {
+              width: 100%;
+            }
+            @media only screen and (min-width: 1800px) {
+              width: 30.125vw;
+            }
+            @media only screen and (min-width: 2200px) {
+              width: 20.125vw;
+            }
+          }
+        }
+
+        .promotion-card-v2__text-container {
+          padding-top: 10%;
+
+          @media only screen and (max-width: 480px) {
+            .promotion-card-v2__description-text {
+              min-height: unset;
+            }
+          }
+
+          .price {
+            font-weight: 600;
+            font-size: 25px;
+            color: #000;
+
+            @media only screen and (min-width: 769px) and (max-width: 1024px) {
+              font-size: 20px;
+            }
+
+            @media only screen and (max-width: 768px) {
+              font-size: 18px;
+            }
+          }
+
+          .promotion-card-v2__sub-headline-text {
+            @media only screen and (max-width: 768px) {
+              font-size: 25px;
+            }
+          }
+
+          .promotion-card-v2__sub-headline {
+            color: #000;
+            min-height: 4vw !important;
+          }
+
+          .promotion-card-v2__cta-wrapper {
+            @media only screen and (max-width: 480px) {
+              margin-top: 20px;
+            }
+
+            @media only screen and (min-width: 481px) and (max-width: 768px) {
+              margin-top: 10px;
+            }
+          }
+        }
+      }
+
+      &.finance {
+        // background-image: url('https://images.samsung.com/is/image/samsung/p5/uk/upper-funnel-pfp/gradient_bg.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #eaeff6;
+        .promotion-card-v2__image {
+          top: 36%;
+          z-index: 999;
+
+          @media only screen and (max-width: 768px) {
+            top: 55%;
+          }
+        }
+
+        .product-image {
+          img {
+            width: 50.125vw;
+            @media only screen and (max-width: 768px) {
+              width: 85.13vw;
+            }
+            @media only screen and (max-width: 500px) {
+              width: 100%;
+            }
+            @media only screen and (max-width: 661px) {
+              width: 100%;
+            }
+            @media only screen and (min-width: 1800px) {
+              width: 36.125vw;
+            }
+            @media only screen and (min-width: 2200px) {
+              width: 20.125vw;
+            }
+          }
+        }
+
+        @media only screen and (max-width: 768px) {
+          .promotion-card-v2__sub-headline-text {
+            font-size: 25px;
+            min-height: unset;
+          }
+        }
+      }
+    }
+
+    .promotion-card-v2__text {
+      .promotion-card-v2__text-container {
+        top: 0;
+        bottom: unset;
+        padding-top: 50px;
+
+        @media only screen and (max-width: 500px) {
+          padding-top: 15px;
+        }
+        .promotion-card-v2__cta-wrapper {
+          @media screen and (max-width: 500px) {
+            margin-top: 0px;
+            height: 18.4vw;
+          }
+        }
+        .promotion-card-v2__description {
+          @media screen and (max-width: 767px) {
+            min-height: 5vw;
+          }
+          @media screen and (max-width: 500px) {
+            min-height: 5vw;
+          }
+        }
+      }
+    }
+
+    .promotion-card-v2__sub-headline-text {
+      font-size: 35px;
+
+      @media only screen and (min-width: 481px) and (max-width: 768px) {
+        font-size: 30px;
+      }
+
+      @media only screen and (min-width: 321px) and (max-width: 480px) {
+        font-size: 25px;
+      }
+
+      @media only screen and (max-width: 320px) {
+        font-size: 20px;
+      }
+    }
+
+    .promotion-card-v2__sub-headline {
+      color: #000;
+      min-height: 4vw !important;
+    }
+
+    @media only screen and (max-width: 480px) {
+      .promotion-card-v2__sub-headline {
+        min-height: unset !important;
+        padding-top: 25px;
+      }
+    }
+
+    .promotion-card-v2__legal-disclaimer {
+      font-size: 1vw !important;
+      padding: 20px 0px 0px 0px;
+
+      @media only screen and (max-width: 767px) {
+        font-size: 2vw !important;
+      }
+      @media only screen and (max-width: 500px) {
+        font-size: 15px !important;
+        padding: 20px 0px;
+      }
+      @media only screen and (max-width: 320px) {
+        font-size: 10px !important;
+      }
+    }
+
+    .promotion-card-v2__description {
+      .promotion-card-v2__description-text {
+        font-weight: 500;
+
+        @media only screen and (max-width: 320px) {
+          min-height: unset;
+        }
+
+        &.tradeIn {
+          color: #000;
+          font-size: 18px;
+          margin: 10px 0;
+          font-weight: bold;
+
+          @media only screen and (max-width: 768px) {
+            font-size: 15px;
+          }
+        }
+
+        &.finance {
+          font-size: 18px;
+          line-height: 1.5;
+          font-weight: bold;
+
+          @media only screen and (max-width: 768px) {
+            font-size: 18px;
+          }
+        }
+      }
+
+      .price {
+        font-size: 21px;
+        margin: 15px 0;
+      }
+    }
+
+    .promotion-card-v2__cta .cta {
+      max-width: 100px;
+      @media screen and (max-width: 767px) {
+        max-width: 200px;
+      }
+      // @media screen and (max-width: 500px) {
+      //   max-width: 200px;
+      // }
+      &.light {
+        background-color: #000 !important;
+        color: #fff !important;
+      }
+    }
+  }
+}
