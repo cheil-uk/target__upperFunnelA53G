@@ -146,7 +146,7 @@ export default class Promotioncard {
         if (currentUrl === '/uk/smartphones/galaxy-note/' && view <= 425) {
             container.insertBefore(container.lastChild, container.children[1]);
         } else if (view <= 425) {
-            container.insertBefore(container.lastChild, container.children[1]);
+            container.insertBefore(container.lastChild, container.children[2]);
         } else {
             container.insertBefore(container.lastChild, container.children[2]);
         }
@@ -265,9 +265,9 @@ export default class Promotioncard {
         termsContainer.prepend(termsOffer);
         // console.log(container.children[4], container.lastChild);
         if (view <= 425) {
-            container.insertBefore(container.lastChild, container.children[1]);
+            container.insertBefore(container.lastChild, container.children[2]);
             const image = promoCard.querySelector('.product-image > img');
-            container.insertBefore(container.lastChild, container.children[1]);
+            container.insertBefore(container.lastChild, container.children[2]);
             image.setAttribute('src', 'https://images.samsung.com/is/image/samsung/assets/uk/upper-funnel-pfp/a53-5g/Image_Opt_01_3x.png');
         } else {
             container.insertBefore(container.lastChild, container.children[2]);
