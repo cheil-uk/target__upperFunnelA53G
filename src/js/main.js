@@ -48,8 +48,8 @@ cheillondon.targetBoilerplate = (function () {
 					main.removeStuff();
 					main.addElements();
 					main.promotioncard = new Promotioncard();
-					main.promotioncard.getFinance();
-					// main.promotioncard.getTradeIn();
+					// main.promotioncard.getFinance();
+					main.promotioncard.getTradeIn();
 					// main.promotioncard.offer();
 					main.promotioncard.removePreOrder();
 				} else {

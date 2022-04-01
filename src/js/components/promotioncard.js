@@ -231,7 +231,7 @@ export default class Promotioncard {
                             <span class="promotion-card-v2__sub-headline-text">Galaxy A53 5G</span>
                         </h2>
                         <div class="promotion-card-v2__description">
-                            <p class="promotion-card-v2__description-text tradeIn">Up to £160 off the new Galaxy A53 5G with Trade In*</p>
+                            <p class="promotion-card-v2__description-text tradeIn">Up to £100 off the new Galaxy A53 5G with Trade In*</p>
                             <p class="promotion-card-v2__description-text">Get an instant discount on your order</p>
                         </div>
                         <div class="promotion-card-v2__cta-wrapper">
@@ -257,7 +257,7 @@ export default class Promotioncard {
         <div class="text-editor__contents-wrap">
             <div class="text-editor__column-wrap">
                 <div class="text-editor__column text-editor--description-text-size-small">
-                &#42;&#42;&#42;Purchase from Samsung Shop Online by 31/03/22. £450 value based on iPad Pro 5. Values can vary based on model and condition of trade-in device, and on purchases of exclusive colour devices. Purchased tablet will be blocked if you don't send us your trade-in device. T&Cs apply.
+                &#42;Purchase from Samsung.com by <span class="+"tradeinDate__49114"+">29/04/22<span>. <span class="+"tradeinValue__49114"+">£100<span> value based on Galaxy A80. Values vary by model and condition. Purchased device will be blocked if you don't send us your trade-in device. T&Cs apply..
                 </div>
             </div>
         </div>`;
