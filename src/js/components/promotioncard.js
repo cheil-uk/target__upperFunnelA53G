@@ -257,7 +257,7 @@ export default class Promotioncard {
         <div class="text-editor__contents-wrap">
             <div class="text-editor__column-wrap">
                 <div class="text-editor__column text-editor--description-text-size-small">
-                &#42;Purchase from Samsung.com by <span class="+"tradeinDate__49114"+">29/04/22<span>. <span class="+"tradeinValue__49114"+">£100<span> value based on Galaxy A80. Values vary by model and condition. Purchased device will be blocked if you don't send us your trade-in device. T&Cs apply..
+                &#42;Purchase from Samsung.com by <span class="+"tradeinDate__49114"+">05.05.22 - 31.05.22<span>. <span class="+"tradeinValue__49114"+">£80<span> value based on Galaxy A80. Values vary by model and condition. Purchased device will be blocked if you don't send us your trade-in device. T&Cs apply..
                 </div>
             </div>
         </div>`;
