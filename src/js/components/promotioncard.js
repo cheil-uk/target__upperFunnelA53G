@@ -35,23 +35,21 @@ export default class Promotioncard {
     async getTradeIn() {
 
         try {
-            const response = await axios.get(
-                `https://p1.ecom.samsung.com/v1/exchange/api/gbr/trade-in/sku-devices/uk/SM-X700NZAAEUA`,
-                {
-                  headers: {
-                    "Access-Control-Allow-Origin": "*",
-                    "content-type": "application/json",
-                    "x-ecom-app-id": "web",
-                  },
+        const request = new Request('https://d1vp9jkpfdwr15.cloudfront.net/tradeIn/tradeIn.json')
+        fetch(request)
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${ response.status }`);
                 }
-            );
-
-            const finance = await response.data;
-            // console.log(finance)
-            // const fullPrice = finance.payment_methods.KSI.finance_plans.sliceit36[0].total_amount;
-            // const tradePrice = fullPrice  - 550.00;
-            // console.log(fullPrice, tradePrice);
-            this.addPromoTradeIn();
+                response.json().then((data) => {
+                    const tradeInData = data
+                    const galaxyA53Value = tradeInData.TradeIn[0].GalaxyA53.tradeInValue;
+                    const galaxyA53EndDate = tradeInData.TradeIn[0].GalaxyA53.dateEnd;
+                    const galaxyA53StartDate = tradeInData.TradeIn[0].GalaxyA53.dateStart;
+                    // console.log(galaxyA53Value, galaxyA53EndDate)
+                    this.addPromoTradeIn(galaxyA53Value, galaxyA53EndDate, galaxyA53StartDate);
+                })
+            })
 
         }
         catch(error) {
@@ -211,7 +209,7 @@ export default class Promotioncard {
 
     }
 
-    addPromoTradeIn() {
+    addPromoTradeIn(galaxyA53Value, galaxyA53EndDate, galaxyA53StartDate) {
         const currentUrl = window.location.pathname;
         const view = screen.width;
         const container = document.querySelector('.js-pf-content-wrap');
@@ -231,7 +229,7 @@ export default class Promotioncard {
                             <span class="promotion-card-v2__sub-headline-text">Galaxy A53 5G</span>
                         </h2>
                         <div class="promotion-card-v2__description">
-                            <p class="promotion-card-v2__description-text tradeIn">Up to £100 off the new Galaxy A53 5G with Trade In*</p>
+                            <p class="promotion-card-v2__description-text tradeIn">Up to £${galaxyA53Value} off the new Galaxy A53 5G with Trade In*</p>
                             <p class="promotion-card-v2__description-text">Get an instant discount on your order</p>
                         </div>
                         <div class="promotion-card-v2__cta-wrapper">
@@ -251,15 +249,11 @@ export default class Promotioncard {
         // const price = tradePrice.toFixed(2);
         // const priceInfo = container.querySelector('.price');
         // priceInfo.textContent = `£${price}`;
-        const termsContainer = document.querySelector('.text-editor__wrap');
+        const termsContainer = document.querySelector('.text-editor__column')
         const termsOffer = document.createElement('div');
         termsOffer.innerHTML = `
         <div class="text-editor__contents-wrap">
-            <div class="text-editor__column-wrap">
-                <div class="text-editor__column text-editor--description-text-size-small">
-                &#42;Purchase from Samsung.com by <span class="+"tradeinDate__49114"+">05.05.22 - 31.05.22<span>. <span class="+"tradeinValue__49114"+">£80<span> value based on Galaxy A80. Values vary by model and condition. Purchased device will be blocked if you don't send us your trade-in device. T&Cs apply..
-                </div>
-            </div>
+            <p>&#42;Purchase from Samsung.com by ${galaxyA53StartDate} - ${galaxyA53EndDate}. £${galaxyA53Value} value based on Galaxy A80. Values vary by model and condition. Purchased device will be blocked if you don't send us your trade-in device. T&Cs apply.</p>
         </div>`;
         termsOffer.classList.add('text-editor__wrap_disclaimer');
         termsContainer.prepend(termsOffer);
